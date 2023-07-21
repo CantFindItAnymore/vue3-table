@@ -5,7 +5,6 @@
       <el-image
         style="width: 100px; height: 100px"
         :src="'https://avatars.githubusercontent.com/u/31693925?v=4'"
-        :fit="fit"
       />
     </el-table-column>
     <el-table-column prop="score" label="分值" />
