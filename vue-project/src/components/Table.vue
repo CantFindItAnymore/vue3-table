@@ -2,10 +2,9 @@
   <el-table :data="tableData" border style="width: 80vw">
     <el-table-column prop="fileName" label="文档名称" width="300" />
     <el-table-column prop="file" label="文件">
-      <el-image
-        style="width: 100px; height: 100px"
-        :src="'https://avatars.githubusercontent.com/u/31693925?v=4'"
-      />
+      <template slot="“scope”">
+        <el-image style="width: 100px; height: 100px" :src="scope.row.file" />
+      </template>
     </el-table-column>
     <el-table-column prop="score" label="分值" />
     <el-table-column prop="name" label="姓名" />
